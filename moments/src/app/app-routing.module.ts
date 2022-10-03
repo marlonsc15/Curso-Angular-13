@@ -19,7 +19,8 @@ const routes: Routes = [
     component: NewMomentsComponent,  
   },
   {
-    path: 'moments/:id', component: MomentComponent,
+    path: 'moments/:id',
+     component: MomentComponent,
   },
 ];
 
