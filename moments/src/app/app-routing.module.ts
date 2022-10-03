@@ -1,3 +1,4 @@
+import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.component';
 import { MomentComponent } from './components/pages/moment/moment.component';
 import { NewMomentsComponent } from './components/pages/new-moments/new-moments.component';
 import { AboutComponent } from './components/pages/about/about.component';
@@ -19,9 +20,14 @@ const routes: Routes = [
     component: NewMomentsComponent,  
   },
   {
+    path: 'moments/edit/:id',
+    component: EditMomentComponent,
+  },
+  {
     path: 'moments/:id',
      component: MomentComponent,
   },
+  
 ];
 
 @NgModule({
