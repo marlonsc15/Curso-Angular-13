@@ -1,3 +1,4 @@
+import { MomentComponent } from './components/pages/moment/moment.component';
 import { NewMomentsComponent } from './components/pages/new-moments/new-moments.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
@@ -16,6 +17,9 @@ const routes: Routes = [
   {
     path: 'moments/new', 
     component: NewMomentsComponent,  
+  },
+  {
+    path: 'moments/:id', component: MomentComponent,
   },
 ];
 
