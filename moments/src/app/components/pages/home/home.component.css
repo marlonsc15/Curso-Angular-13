@@ -1,8 +1,10 @@
 .home-container {
     display: flex;
+    position: relative;
     align-items:  center;
     justify-content: center;
     flex-direction: column;
+    top: 59px;
 }
 
 .home-container h1 {
@@ -21,11 +23,27 @@
     width: 32%;
     margin-bottom: 1em;
     text-align: center;
+    font-weight: bold;
+    background-color: #efefefee;
+    padding: 15px;
+    border-radius: 5% 5% 0 0;
 }
 
 .moment img { 
     width: 100%;
     margin-bottom: 1em;
+    border: 5px solid #efefef;
+    transition: .7s;
+}
+
+.moment img:hover {
+    border: 5px solid #dec129;
+}
+
+.moment h3 {
+    font-size: 2em;
+    margin-top: -.5em;
+    
 }
 
 .moment h3,
@@ -39,12 +57,17 @@
 }
 
 a {
+    width: 100%;
     color: #dec129;
     padding: 0.3em 0.6em;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.596);
+    border: none;
 }
 
 a:hover {
     background-color: #efefef;
+    color: #000;
 }
 
 .search-container {
@@ -67,4 +90,9 @@ a:hover {
     padding: 0.5em;
     width: 100%;
     text-align: center;
+    font-weight: bold;
+}
+
+.search-container ::placeholder {
+    color: #000;
 }

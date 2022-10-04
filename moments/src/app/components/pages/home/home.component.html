@@ -1,4 +1,4 @@
-<div class="home-container">
+<div class="home-container background">
     <h1>Veja o que estão compartilhando</h1>
     <div class="search-container">
         <form >
@@ -13,7 +13,7 @@
                 <h3>{{ moment.title }}</h3>
                 <p class="date">Em: {{moment.created_at}}</p>
                 <p>Comentários: {{moment.comments!.length}}</p>
-                <p><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
+                <p class="pdetalhes"><a routerLink="moments/{{moment.id}}">Detalhes</a></p>
             </div>
         </div>
     </div>

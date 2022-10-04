@@ -2,7 +2,12 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    border-bottom: 1px solid #777;
+    top: 0;
+    border-bottom: 4px solid rgb(7, 7, 7);
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 11;
 } 
 
 .brand,
@@ -19,6 +24,7 @@ nav {
 
 .brand {
     transition: .4s;
+    font-size: 1.5em;
 }
 
 .brand:hover > h2 {
@@ -28,6 +34,7 @@ nav {
 .links li {
     margin-right: 1em;
     list-style: none;
+    font-size: 1.5em;
 }
 
 .links a {

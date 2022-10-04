@@ -1,3 +1,9 @@
+.background {
+    position: relative;
+    top: 60px;
+    min-height: 65vh;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -5,5 +11,5 @@ h2 {
 }
 
 h2 span {
-    color: #dec129;
+    color: #ffffff;
 }
